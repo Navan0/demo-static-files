@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Init
     $('.image-section').hide();
     $('.loader').hide();
     $('#result').hide();
@@ -7,7 +6,6 @@ $(document).ready(function () {
     $('#show').hide();
 
 
-    // Upload Preview
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
