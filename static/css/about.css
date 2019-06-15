@@ -404,6 +404,7 @@ button.buttonwrap{
   flex-wrap: wrap;
   padding: 20px;
   padding-top: 40px;
+  width:100%
   /* border-bottom: 1px solid #ddd; */
 }
 .innerwraper:first-child{
@@ -581,6 +582,9 @@ button.buttonwrap{
     width: 100%;
     border: none;
   }
+  #i-have-a-tooltip {
+    position: unset;
+  }
 }
 @media(max-width:768px){
   .wraper{
@@ -603,6 +607,7 @@ button.buttonwrap{
   }
   .innerwraper:first-child{
     border: none;
+    width:100%
   }
   .innerwraper.results{
     max-height: auto;
