@@ -322,21 +322,21 @@ var map;
          }
        });
      }
-     $(document).ready(function(){
-        $('.img-wrap').slick({
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            arrows:true,
-            dots:false,
-            nextArrow:('<i class="fa fa-chevron-right arrow-right"></i>'),
-            prevArrow:('<i class="fa fa-chevron-left arrow-left"></i>'),
-            responsive:[{
-                breakpoint:991,
-                settings:{
-                    slidesToScroll:1,
-                    slidesToShow:1,
-                },
-            }]
-        });
-    });
+$(document).ready(function(){
+  $('.img-wrap').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows:true,
+    dots:false,
+    nextArrow:('<i class="fa fa-chevron-right arrow-right"></i>'),
+    prevArrow:('<i class="fa fa-chevron-left arrow-left"></i>'),
+    responsive:[{
+      breakpoint:991,
+      settings:{
+        slidesToScroll:1,
+        slidesToShow:1,
+      },
+    }]
+  });
+});
