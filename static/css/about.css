@@ -619,10 +619,13 @@ button.buttonwrap{
     width: 100px;
   }
   .probablility,.probablility::before{
-    width: 160px;
+    width: 140px;
   }
   .probablility::after{
     font-size: 12px;
+  }
+  #i-have-a-tooltip {
+    width: 320px;
   }
 } 
 
