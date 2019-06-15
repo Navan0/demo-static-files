@@ -178,6 +178,7 @@ body {
   padding: 0;
   margin: 0;
   border: solid 20px white;
+  width: 100%;
   box-shadow: -3px -3px 12px #999;
 }
 
