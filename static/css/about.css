@@ -400,14 +400,14 @@ button.buttonwrap{
  /* padding-top: 60px; */
 }
 .innerwraper{
-  width: 50%;
+  /* width: 50%; */
   flex-wrap: wrap;
   padding: 20px;
   padding-top: 40px;
   /* border-bottom: 1px solid #ddd; */
 }
 .innerwraper:first-child{
-  border-right: 1px solid #ddd; 
+  /* border-right: 1px solid #ddd;  */
 }
 .upload{
   height: 200px;
