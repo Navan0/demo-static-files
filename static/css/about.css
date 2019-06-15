@@ -10,7 +10,7 @@
   -o-object-position: center center;
      object-position: center center;
 }
-.split {
+/* .split {
   height: 100%;
   width: 50%;
   position: fixed;
@@ -18,18 +18,26 @@
   top: 0;
   overflow-x: hidden;
   padding-top: 20px;
+} */
+.split{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-flow:column;
+  width: 50%;
+  align-items: center;
+  border-right: 1px solid #ddd;
+  position: relative;
 }
-
-.left {
-  left: 0;
+/* .left {
+  
   background-color: #f9f9f9;
 }
 
 .right {
-  right: 0;
+  
   background-color: #ffffff;
 }
-
+ */
 
 
 
@@ -156,12 +164,14 @@ body {
 
 #frame {
     position: relative;
+    width: 100%;
+    display: flex;
     padding: 0;
     margin: 0;
-    border: solid 9px #555;
+    border: solid 1px #555;
     max-width: 261px;
     margin: 20px auto;
-    box-shadow: -3px -3px 12px #999;
+    /* box-shadow: -3px -3px 12px #999; */
 }
 #border {
   position: relative;
@@ -177,14 +187,16 @@ body {
     font-weight: 100;
     font-size: 20px;
     text-align: center;
-    padding: 50px;
-    margin: 100px auto;
+    position: relative;
+    /* padding: 50px; */
+    /* margin: 100px auto; */
     background: white;
-    position: absolute;
-    right: 104px;
+    /* position: absolute; */
+    /* right: 104px; */
     border-radius: 5px;
     top: 308px;
-    box-shadow: 10px 10px 0px rgba(0,0,0,.05);
+    border:1px solid #ddd;
+    /* box-shadow: 10px 10px 0px rgba(0,0,0,.05); */
 }
 #i-have-a-tooltip:before {
   content:attr(data-description);
@@ -392,7 +404,7 @@ button.buttonwrap{
   flex-wrap: wrap;
   padding: 20px;
   padding-top: 40px;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
 }
 .innerwraper:first-child{
   border-right: 1px solid #ddd; 
@@ -552,10 +564,22 @@ button.buttonwrap{
   padding: 0 10px;
   height: 40px!important;
 }
+.wrapper-outer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 /* media queries */
 @media(max-width:991px){
   .img-wrap{
     width: 100px;
+  }
+  .wrapper-outer{
+    flex-direction: column;
+  }
+  .split{
+    width: 100%;
+    border: none;
   }
 }
 @media(max-width:768px){
