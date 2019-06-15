@@ -374,10 +374,13 @@ button.buttonwrap{
 }
 .chart-outlet .chartwrapper{
   display: flex;
+  width: 100%;
+
 }
 .chartwrapper{
   display: flex;
   height: auto;
+  width: 100%;
 }
 .wraper{
  display: flex;
@@ -441,6 +444,7 @@ button.buttonwrap{
   justify-content: flex-start;
   align-items: center;
   display: flex;
+  width: 100%;
 }
 /* .innerwraper::-webkit-scrollbar {
   width: 4px;
@@ -578,6 +582,7 @@ button.buttonwrap{
   }
   .innerwraper.results{
     max-height: auto;
+    width:100%;
     /* overflow: hidden; */
   }
   .img-wrap{
