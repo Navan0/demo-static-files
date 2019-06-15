@@ -617,6 +617,12 @@ button.buttonwrap{
   .img-wrap{
     width: 100px;
   }
+  .probablility,.probablility::before{
+    width: 160px;
+  }
+  .probablility::after{
+    font-size: 12px;
+  }
 } 
 
 
