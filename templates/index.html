@@ -1,14 +1,25 @@
-{% extends "base.html" %} {% block content %}
-
-
-<div>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Oswald|Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <link href="./static/css/main.css" rel="stylesheet"> -->
+  <link href="D:\Projects\demo-static-filesg\static\css\main.css" rel="stylesheet">
+</head>
+<div class="cta-wrapper">
     <form id="upload-file" method="post" enctype="multipart/form-data">
         <label for="imageUpload" class="upload-label">
             UPLOAD...
         </label>
         <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
     </form>
-
     <div class="image-section" style="display:none;">
         <div class="img-preview">
             <div id="imagePreview">
@@ -19,13 +30,12 @@
               <button type="button" class="btn2 btn-primary btn-lg" id="show" onclick="location.href = '/about';"  >Analyze result</button>
         </div>
     </div>
-
     <div class="loader" style="display:none;"></div>
-
     <h3 id="result" class="column">
-        <span> </span>
+			<span> </span>
     </h3>
-
 </div>
-
-{% endblock %}
+	<footer>
+			<script src="D:\Projects\demo-static-filesg\static\js\main.js" type="text/javascript"></script>
+	</footer>
+</html>
